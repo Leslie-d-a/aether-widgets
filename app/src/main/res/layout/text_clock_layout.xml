@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:gravity="top">
+
+    <TextClock
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:format12Hour="h"
+        android:format24Hour="HH"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp"
+        android:fontFamily="sans-serif-light"
+        android:includeFontPadding="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:text=":"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp"
+        android:fontFamily="sans-serif-light"
+        android:includeFontPadding="false" />
+
+    <TextClock
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:format12Hour="mm"
+        android:format24Hour="mm"
+        android:textColor="#D0BCFF"
+        android:textSize="44sp"
+        android:fontFamily="sans-serif-light"
+        android:includeFontPadding="false" />
+
+    <TextClock
+        android:id="@+id/am_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:format12Hour=" a"
+        android:format24Hour=""
+        android:textColor="#80FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="2dp"
+        android:includeFontPadding="false" />
+
+</LinearLayout>
